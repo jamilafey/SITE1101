@@ -152,3 +152,5 @@ p {
 .project-card:hover {
   transform: translateY(-8px);
 }
+<link rel="stylesheet" href="css/style.css">
+<script src="script.js"></script>
