@@ -130,14 +130,23 @@ p {
   border-radius: 50%;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   transition: transform 0.3s;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* PROJECT CARDS */
+section {
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .projects {
   display: flex;
   gap: 40px;
   justify-content: center;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .project-card {
@@ -159,6 +168,8 @@ p {
 
 .project-card img {
   margin-top: 10px;
+  max-width: 100%;
+  height: auto;
 }
 /* --- Home & About Boxes --- */
 .intro-box, .about-box {
