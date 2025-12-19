@@ -150,3 +150,59 @@ p {
 .project-card:hover {
   transform: translateY(-8px);
 }
+/* --- Home & About Boxes --- */
+.intro-box, .about-box {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: var(--card);
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+  }
+  
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+  
+  /* Animated header underline */
+  h1 {
+    position: relative;
+  }
+  
+  h1::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    bottom: -5px;
+    left: 25%;
+    background-color: var(--accent);
+    border-radius: 50px;
+    transition: width 0.3s;
+  }
+  
+  h1:hover::after {
+    width: 70%;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
