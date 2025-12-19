@@ -147,10 +147,18 @@ p {
   text-align: center;
   width: 250px;
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
+}
+
+.project-card img {
+  margin-top: 10px;
 }
 /* --- Home & About Boxes --- */
 .intro-box, .about-box {
