@@ -1,33 +1,51 @@
-<nav class="navbar">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamila | Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
     <div class="logo">Jamila</div>
-  
+
     <ul class="nav-links">
-      <li><a href="index.html" class="Projects">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
     </ul>
-    <script src="script.js"></script>
 
     <div class="toggle-wrapper">
       <input type="checkbox" id="theme-toggle">
       <label for="theme-toggle" class="toggle"></label>
     </div>
   </nav>
-  <h1>Projects</h1>
 
-<div class="projects">
-  <div class="project-card">
-    <h3>Example 1</h3>
-    <p>Short description.</p>
-  </div>
+  <section>
+    <h1>Projects</h1>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Example 1</h3>
+        <p>Short description.</p>
+        <img src="images/project1.jpg" alt="Project 1" class="project-img">
+      </div>
 
-  <div class="project-card">
-    <h3>Example 2</h3>
-    <p>Short description.</p>
-  </div>
+      <div class="project-card">
+        <h3>Example 2</h3>
+        <p>Short description.</p>
+        <img src="images/project2.jpg" alt="Project 2" class="project-img">
+      </div>
 
-  <div class="project-card">
-    <h3>Example 3</h3>
-    <p>Short description.</p>
-  </div>
-</div>
+      <div class="project-card">
+        <h3>Example 3</h3>
+        <p>Short description.</p>
+        <img src="images/project3.jpg" alt="Project 3" class="project-img">
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
