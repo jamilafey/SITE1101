@@ -142,6 +142,11 @@ section {
   text-align: center;
 }
 
+section h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .projects {
   display: flex;
   gap: 40px;
@@ -202,6 +207,7 @@ section {
   /* Animated header underline */
   h1 {
     position: relative;
+    display: inline-block;
   }
   
   h1::after {
@@ -210,7 +216,8 @@ section {
     width: 50%;
     height: 3px;
     bottom: -5px;
-    left: 25%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: var(--accent);
     border-radius: 50px;
     transition: width 0.3s;
@@ -218,6 +225,8 @@ section {
   
   h1:hover::after {
     width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   /* Fade-in animation */
