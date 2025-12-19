@@ -123,11 +123,13 @@ p {
 /* IMAGES */
 .profile-img,
 .project-img {
+  display: block;
   width: 220px;
   height: 220px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
 }
 
 /* PROJECT CARDS */
