@@ -261,3 +261,23 @@ section h1 {
     }
   }
   
+  /* FOOTER */
+  .social-footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 0.85rem;
+    color: var(--text);
+  }
+  
+  .social-footer a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-footer a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  
