@@ -276,6 +276,10 @@ section h1 {
     transition: color 0.3s ease;
   }
   
+  .social-footer a:visited {
+    color: var(--text);
+  }
+  
   .social-footer a:hover {
     color: var(--accent);
     text-decoration: underline;
