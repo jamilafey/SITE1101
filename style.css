@@ -1,0 +1,154 @@
+/* ===== GLOBAL ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --bg: #f3ede7;
+  --text: #5a4633;
+  --accent: #c2a27e;
+  --card: #ffffff;
+}
+
+body.dark {
+  --bg: #2f2a26;
+  --text: #f1eae2;
+  --accent: #d6b98c;
+  --card: #3b3530;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.4s, color 0.4s;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+/* animated underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 50%;
+  bottom: 0;
+  background-color: var(--accent);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 60%;
+}
+
+/* ===== TOGGLE ===== */
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#theme-toggle {
+  display: none;
+}
+
+.toggle {
+  width: 50px;
+  height: 26px;
+  background: #d7c7b8;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#theme-toggle:checked + .toggle {
+  background: var(--accent);
+}
+
+#theme-toggle:checked + .toggle::after {
+  transform: translateX(24px);
+}
+
+/* ===== HEADINGS & TEXT ===== */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* ===== IMAGES ===== */
+.profile-img,
+.project-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== PROJECT CARDS ===== */
+.projects {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.project-card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
