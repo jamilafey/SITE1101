@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (toggle) {
       toggle.checked = true;
     }
+  } else if (savedTheme === "light") {
+    document.body.classList.remove("dark");
+    if (toggle) {
+      toggle.checked = false;
+    }
   }
   
   // Save theme preference when toggle changes
