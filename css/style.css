@@ -285,3 +285,74 @@ section h1 {
     text-decoration: underline;
   }
   
+  /* Mobile Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 20px 15px;
+      gap: 12px;
+      flex-wrap: nowrap;
+    }
+    
+    .logo {
+      font-size: 1.4rem;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+    
+    .nav-links {
+      gap: 18px;
+      margin: 0 8px;
+      flex-shrink: 1;
+    }
+    
+    .nav-links a {
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+    
+    .toggle-wrapper {
+      margin-left: 8px;
+      flex-shrink: 0;
+    }
+  }
+  
+  /* Extra small mobile screens */
+  @media screen and (max-width: 480px) {
+    .navbar {
+      padding: 18px 12px;
+      gap: 10px;
+    }
+    
+    .logo {
+      font-size: 1.3rem;
+      margin-right: 6px;
+    }
+    
+    .nav-links {
+      gap: 15px;
+      margin: 0 6px;
+    }
+    
+    .nav-links a {
+      font-size: 0.85rem;
+    }
+    
+    .toggle-wrapper {
+      margin-left: 6px;
+    }
+    
+    .toggle {
+      width: 45px;
+      height: 24px;
+    }
+    
+    .toggle::after {
+      width: 18px;
+      height: 18px;
+    }
+    
+    #theme-toggle:checked + .toggle::after {
+      transform: translateX(21px);
+    }
+  }
+  
